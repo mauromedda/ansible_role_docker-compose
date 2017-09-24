@@ -19,8 +19,9 @@
     - install
 
 - name: "Docker-Compose | Install docker-compose"
-  yum:
+  pip:
     name: docker-compose
+    version: "{{ docker_compose_version | default(omit) }}"
     state: present
   tags:
     - docker
