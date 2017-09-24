@@ -15,4 +15,5 @@ galaxy_info:
 
 dependencies:
   - mauromedda.ansible_role_epel
+  - mauromedda.ansible_role_pip
   - mauromedda.ansible_role_docker-py
