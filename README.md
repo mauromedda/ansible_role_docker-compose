@@ -19,6 +19,7 @@ None.
 ```
     - hosts: servers
       roles:
+        - { role: mauromedda.ansible_role_epel }
         - { role: mauromedda.ansible_role_docker-compose }
 ```
 
