@@ -1,7 +1,7 @@
 ---
 # tasks file for ansible_role_docker-compose
 
-- name: "PIP | Ensure that python 2.7 is installed"
+- name: "Docker-Compose | Ensure that python 2.7 is installed"
   yum:
     name: python
     state: present
