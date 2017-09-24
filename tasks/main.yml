@@ -6,12 +6,16 @@
     name: python
     state: present
   tags:
+    - docker
+    - compose
     - install
 
 - name: "Docker-Compose | Install urllib3"
   pip:
     name: urllib3
   tags:
+    - docker
+    - compose
     - install
 
 - name: "Docker-Compose | Install docker-compose"
@@ -19,4 +23,6 @@
     name: docker-compose
     state: present
   tags:
+    - docker
+    - compose
     - install
