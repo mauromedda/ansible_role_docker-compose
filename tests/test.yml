@@ -5,4 +5,5 @@
 
   roles:
     - { role: mauromedda.ansible_role_epel }
+    - { role: mauromedda.ansible_role_docker-py }
     - { role: role_under_test }

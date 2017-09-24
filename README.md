@@ -13,6 +13,7 @@ None.
 ## Dependencies
 
   - mauromedda.ansible_role_epel
+  - mauromedda.ansible_role_docker-py
 
 ## Example Playbook
 
@@ -20,6 +21,7 @@ None.
     - hosts: servers
       roles:
         - { role: mauromedda.ansible_role_epel }
+        - { role: mauromedda.ansible_role_docker-py }
         - { role: mauromedda.ansible_role_docker-compose }
 ```
 
