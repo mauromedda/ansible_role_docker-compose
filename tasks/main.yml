@@ -8,11 +8,15 @@
   tags:
     - install
 
-- name: "Docker-Compose | Install docker-compose"
+- name: "Docker-Compose | Install urllib3"
   pip:
-    name: "{{ item }}"
-  with_items:
-    - urllib3
-    - docker-compose
+    name: urllib3
+  tags:
+    - install
+
+- name: "Docker-Compose | Install docker-compose"
+  yum:
+    name: docker-compose
+    state: present
   tags:
     - install
