@@ -1,2 +1,3 @@
 - src: mauromedda.ansible_role_epel
+- src: mauromedda.ansible_role_pip
 - src: mauromedda.ansible_role_docker-py

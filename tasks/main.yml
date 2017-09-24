@@ -9,8 +9,10 @@
     - install
 
 - name: "Docker-Compose | Install docker-compose"
-  yum:
-    name: docker-compose
-    state: present
+  pip:
+    name: "{{ item }}"
+  with_items:
+    - urllib3
+    - docker-compose
   tags:
     - install
